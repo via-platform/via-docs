@@ -1,0 +1,52 @@
+@import "./variables.less";
+
+body
+{
+    background: red;
+}
+
+.markdown
+{
+    max-width: 800px;
+
+    h1
+    {
+        color: #FFF;
+    }
+
+    h2
+    {
+        color: #FFF;
+        font-weight: 700;
+        margin-top: 20px;
+        line-height: 24px;
+    }
+
+    h1 + h2
+    {
+        color: @grey;
+        margin-top: -10px;
+        margin-bottom: 40px;
+    }
+
+    p
+    {
+        color: @grey;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        margin: 20px 0;
+    }
+
+    a
+    {
+        color: @base;
+        text-decoration: none;
+
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+}

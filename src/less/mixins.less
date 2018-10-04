@@ -1,0 +1,361 @@
+@import "./variables.less";
+
+.text-overflow
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.appearance(@app) {
+	-webkit-appearance: @app;
+	-moz-appearance: @app;
+	appearance: @app;
+}
+
+.transform(@transform) {
+	-webkit-transform: @transform;
+	-moz-transform: @transform;
+	-ms-transform: @transform;
+	-o-transform: @transform;
+	transform: @transform;
+}
+
+.translate3d(@x, @y, @z) {
+	-webkit-transform: translate3d(@x, @y, @z);
+	-moz-transform: translate3d(@x, @y, @z);
+	-ms-transform: translate3d(@x, @y, @z);
+	-o-transform: translate3d(@x, @y, @z);
+	transform: translate3d(@x, @y, @z);
+}
+
+.animation(@animation) {
+	animation: @animation;
+	-moz-animation: @animation;
+	-o-animation: @animation;
+	-ms-animation: @animation;
+	-webkit-animation: @animation;
+}
+
+.backface-visibility(@visibility) {
+	-webkit-backface-visibility: @visibility;
+	-moz-backface-visibility: @visibility;
+	-ms-backface-visibility: @visibility;
+	backface-visibility: @visibility;
+}
+
+.user-select(@select) {
+	user-select: @select;
+	-moz-user-select: @select;
+	-ms-user-select: @select;
+	-o-user-select: @select;
+	user-select: @select;
+}
+
+.transition-transform(@tween, @time) {
+	-webkit-transition: -webkit-transform @tween @time;
+	-moz-transition: -moz-transform @tween @time;
+	-ms-transition: -ms-transform @tween @time;
+	-o-transition: -o-transform @tween @time;
+	transition: transform @tween @time;
+}
+
+.reset-input
+{
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	.appearance(none);
+	font-family: @font;
+	color: @black;
+	resize: none;
+	box-shadow: 0;
+	outline: 0;
+	padding: 0;
+}
+
+.reset-input[disabled]
+{
+	color: @grey;
+}
+
+.absolute(@top, @right, @bottom, @left) {
+	position: absolute;
+	top: @top;
+	right: @right;
+	bottom: @bottom;
+	left: @left;
+}
+
+.full
+{
+	.absolute(0, 0, 0, 0);
+
+	&.fixed
+	{
+		position: fixed;
+	}
+}
+
+.pointer
+{
+	cursor: pointer;
+	-webkit-touch-callout: none;
+	user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.grab
+{
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+	cursor: grab;
+
+	&:active
+	{
+		cursor: -moz-grabbing;
+		cursor: -webkit-grabbing;
+		cursor: grabbing;
+	}
+}
+
+.center
+{
+	text-align: center;
+}
+
+.text-right
+{
+	text-align: right;
+}
+
+.block
+{
+	display: block;
+}
+
+.static
+{
+	position: static;
+}
+
+.oh
+{
+	overflow: hidden;
+}
+
+.flex
+{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-center
+{
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.flex-end
+{
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+.flex-start
+{
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+.flex-align
+{
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	align-items: center;
+}
+
+.flex-shrink(@factor) {
+	-webkit-flex-shrink: @factor;
+	flex-shrink: @factor;
+}
+
+.flex-align-bottom
+{
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	align-items: flex-end;
+}
+
+.flex-align-top
+{
+	-webkit-align-items: flex-start;
+	-moz-align-items: flex-start;
+	align-items: flex-start;
+}
+
+.flex-wrap
+{
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-factor(@factor) {
+	-webkit-flex: @factor;
+	flex: @factor;
+}
+
+.flex-basis(@basis) {
+	-webkit-flex-basis: @basis;
+	flex-basis: @basis;
+}
+
+.flex-column
+{
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-reverse
+{
+	-webkit-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+.ff
+{
+	.flex-factor(1);
+	min-width: 0;
+	min-height: 0;
+}
+
+.space-between
+{
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+.cross-axis
+{
+	flex-direction: column;
+}
+
+.noflex
+{
+	-webkit-flex: none;
+	-moz-flex: none;
+	-ms-flex: none;
+	flex: none;
+}
+
+.no-select
+{
+	-webkit-touch-callout: none;
+	user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.scroll
+{
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.scroll-horizontal
+{
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.allow-selection
+{
+	user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+.fill-container
+{
+	width: 100%;
+	height: 100%;
+}
+
+.arbitrary-center
+{
+	margin: auto;
+	.full();
+}
+
+.bc
+{
+	margin: 0 auto;
+}
+
+.all
+{
+	pointer-events: all;
+}
+
+.none
+{
+	pointer-events: none;
+}
+
+.tt
+{
+	.transition-transform(ease, 0.3s);
+	.backface-visibility(hidden);
+}
+
+.to
+{
+	transition: opacity ease 0.3s;
+}
+
+.tof
+{
+	transition: opacity ease 0.25s;
+}
+
+.tw
+{
+	transition: width ease 0.3s;
+}
+
+.tc
+{
+	transition: color ease 0.3s;
+}
+
+.tto
+{
+	-webkit-transition: -webkit-transform ease 0.35s, opacity ease 0.2s;
+	-moz-transition: -moz-transform ease 0.35s, opacity ease 0.2s;
+	-ms-transition: -ms-transform ease 0.35s, opacity ease 0.2s;
+	-o-transition: -o-transform ease 0.35s, opacity ease 0.2s;
+	transition: transform ease 0.35s, opacity ease 0.2s;
+}
+
+.constrain
+{
+	margin: 0 auto;
+	max-width: 1400px;
+	padding: 0 50px;
+}
