@@ -5,6 +5,8 @@ import VueMarkdown from 'vue-markdown';
 
 import App from './App.vue';
 import Doc from './Doc.vue';
+import List from './List.vue';
+import Entry from './Entry.vue';
 
 Vue.config.productionTip = false
 
@@ -12,14 +14,15 @@ require('./less/global.less');
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
-Vue.use(VueLocalStorage, {name: 'ls'});
 
 Vue.component('vue-markdown', VueMarkdown);
+Vue.component('list', List);
+Vue.component('entry', Entry);
 
 const routes = [
     {
         path: '/',
-        component: Home
+        component: Doc
     },
     {
         path: '/:document',

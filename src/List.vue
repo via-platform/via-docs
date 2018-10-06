@@ -1,19 +1,15 @@
 <template>
-    <div>
-
-    </div>
+    <ul>
+        <entry v-for="item in items" :item="item"></entry>
+    </ul>
 </template>
 
 <script>
 export default {
-    name: 'Doc',
-    data: function(){
-        return {
-            ready: false
-        };
-    },
+    name: 'List',
+    props: ['items'],
     created: function(){
-
+        console.log(this.items);
     }
 }
 </script>

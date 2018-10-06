@@ -1,0 +1,193 @@
+[
+    {
+        "type": "category",
+        "title": "Via Terminal",
+        "contents": [
+            {
+                "type": "category",
+                "title": "Getting Started",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Installing Via",
+                        "url": "/terminal/installing-via.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Creating An Account",
+                        "url": "/terminal/creating-an-account.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Two Factor Authentication",
+                        "url": "/terminal/two-factor-authentication.md"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "User Interface",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Customizing Your Interface",
+                        "url": "/terminal/customizing-your-interface.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Windows and Panes",
+                        "url": "/terminal/windows-and-panes.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "The Omnibar",
+                        "url": "/terminal/omnibar.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "The Status Bar",
+                        "url": "/terminal/status-bar.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Keymaps",
+                        "url": "/terminal/keymaps.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Linking Tabs",
+                        "url": "/terminal/linking-tabs.md"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Default Components",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Charts",
+                        "url": "/terminal/charts.md",
+                        "contents": [
+                            {
+                                "type": "document",
+                                "title": "Chart Types",
+                                "url": "/terminal/chart-types.md"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Technical Indicators",
+                                "url": "/terminal/technical-indicators.md"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Chart Trading",
+                                "url": "/terminal/chart-trading.md"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "document",
+                        "title": "Watchlist",
+                        "url": "/terminal/watchlist.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Symbol Explorer",
+                        "url": "/terminal/symbol-explorer.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Time & Sales",
+                        "url": "/terminal/time-and-sales.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Orderbook",
+                        "url": "/terminal/orderbook.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Market Depth",
+                        "url": "/terminal/market-depth.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Managing Alerts",
+                        "url": "/terminal/managing-alerts.md"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Trade Execution",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Adding Exchange Accounts",
+                        "url": "/terminal/adding-exchange-accounts.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Executing Trades",
+                        "url": "/terminal/executing-trades.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Orders and Fills",
+                        "url": "/terminal/orders-and-fills.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Account Positions",
+                        "url": "/terminal/account-positions.md"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Packages",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Managing Packages",
+                        "url": "/terminal/managing-packages.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Package Settings",
+                        "url": "/terminal/package-settings.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Creating Packages",
+                        "url": "/terminal/creating-packages.md"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Miscellaneous",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Resetting Your Password",
+                        "url": "/terminal/resetting-your-password.md"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Setting A Phone Number",
+                        "url": "/terminal/setting-a-phone-number.md"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "category",
+        "title": "Data Services API",
+        "contents": [
+
+        ]
+    }
+]
