@@ -25,12 +25,12 @@ const routes = [
         component: Doc
     },
     {
-        path: '/:document',
+        path: '/:document*',
         component: Doc
     }
 ];
 
 const render = h => h(App);
-const router = new VueRouter({routes, mode: 'history', base: '/docs'});
+const router = new VueRouter({routes, mode: 'history'});
 
 new Vue({render, router}).$mount('#app');

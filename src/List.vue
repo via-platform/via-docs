@@ -7,16 +7,10 @@
 <script>
 export default {
     name: 'List',
-    props: ['items'],
-    created: function(){
-        console.log(this.items);
-    }
+    props: ['items']
 }
 </script>
 
 <style scoped lang="less">
-    @import "./less/variables";
-    @import "./less/mixins";
-
 
 </style>
