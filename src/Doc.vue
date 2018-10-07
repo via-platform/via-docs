@@ -1,6 +1,6 @@
 <template>
     <div id="doc">
-        <vue-markdown class="markdown" :source="source"></vue-markdown>
+        <vue-markdown class="markdown" :source="source" :postrender="highlight"></vue-markdown>
     </div>
 </template>
 
@@ -17,6 +17,9 @@ export default {
             this.$http.get(this.$route.params.document ? `/docs/${this.$route.params.document}.md` : `/docs/intro.md`)
             .then(response => response.body)
             .then(source => this.source = source);
+        },
+        highlight: function(string){
+            return string;
         }
     },
     watch: {
@@ -59,9 +62,11 @@ export default {
 
         h2
         {
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 22px;
+            line-height: 28px;
             font-weight: 500;
+            margin: 50px 0 10px;
+            color: @f;
         }
 
         h1 + h2
@@ -69,9 +74,9 @@ export default {
             font-size: 18px;
             line-height: 22px;
             font-weight: 500;
-            color: #AAA;
+            color: @grey;
             margin-top: 4px;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
 
         h1 + p
@@ -105,6 +110,89 @@ export default {
             &:hover
             {
                 text-decoration: underline;
+            }
+        }
+
+        pre
+        {
+            font-family: Inconsolata;
+            font-weight: 700;
+            display: block;
+            border: 2px solid #555;
+            padding: 20px;
+            line-height: 18px;
+
+            code
+            {
+                display: block;
+            }
+        }
+
+        .documentation-sections
+        {
+
+        }
+
+        .documentation-section
+        {
+            display: block;
+            padding: 12px 20px 12px 68px;
+            margin-bottom: 15px;
+            border: 2px solid #555;
+            user-select: none;
+            transition: border-color ease 0.25s;
+            cursor: pointer;
+
+            .documentation-section-title
+            {
+                color: @f;
+                font-weight: 500;
+                line-height: 18px;
+                text-decoration: none;
+            }
+
+            .documentation-section-description
+            {
+                color: @grey;
+                margin-top: 4px;
+                line-height: 18px;
+                text-decoration: none;
+            }
+
+            &::after
+            {
+                width: 24px;
+                height: 24px;
+                background: #DDD;
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: 22px;
+                opacity: 0.5;
+            }
+
+            &.terminal::after
+            {
+                background: url('./assets/terminal.svg') 0 2px no-repeat;
+                background-size: 24px auto;
+            }
+
+            &.packages::after
+            {
+                background: url('./assets/package.svg') 0 0 no-repeat;
+                background-size: 24px auto;
+            }
+
+            &.data::after
+            {
+                background: url('./assets/data-services.svg') 0 0 no-repeat;
+                background-size: 24px auto;
+            }
+
+            &:hover
+            {
+                border-color: @via;
+                text-decoration: none;
             }
         }
     }

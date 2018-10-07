@@ -30,7 +30,7 @@ export default {
 
 <style lang="less">
     @import "./less/variables";
-    
+
     #app
     {
         display: flex;
@@ -142,8 +142,7 @@ export default {
                     font-weight: 500;
                     text-transform: none;
                     color: #FFF;
-                    margin-top: 20px;
-                    margin-bottom: 0;
+                    margin: 20px 0;
                     transition: opacity ease 0.25s;
                     cursor: pointer;
 
