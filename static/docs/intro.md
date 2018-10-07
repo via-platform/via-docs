@@ -23,9 +23,3 @@
 </div>
 
 ## Which section is right for me?
-
-``` js
-function hello(){
-    world;
-}
-```

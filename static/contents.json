@@ -201,7 +201,119 @@
         "expandable": true,
         "class": "package",
         "contents": [
-
+            {
+                "type": "category",
+                "title": "Getting Started",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Platform Architecture",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Creating Packages",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Linking Packages",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Publishing Packages",
+                        "url": "/terminal/resetting-your-password"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Essential Classes",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Via Object",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "User Interface",
+                        "url": "/terminal/resetting-your-password",
+                        "contents": [
+                            {
+                                "type": "document",
+                                "title": "Workspace",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Pane Containers",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Panes",
+                                "url": "/terminal/resetting-your-password"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "document",
+                        "title": "Market Data",
+                        "url": "/terminal/resetting-your-password",
+                        "contents": [
+                            {
+                                "type": "document",
+                                "title": "Assets",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Exchanges",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Markets",
+                                "url": "/terminal/resetting-your-password"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "document",
+                        "title": "User Data",
+                        "url": "/terminal/resetting-your-password",
+                        "contents": [
+                            {
+                                "type": "document",
+                                "title": "Accounts",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Positions",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Orders",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Fills",
+                                "url": "/terminal/resetting-your-password"
+                            },
+                            {
+                                "type": "document",
+                                "title": "Alerts",
+                                "url": "/terminal/resetting-your-password"
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
@@ -231,22 +343,42 @@
                 "contents": [
                     {
                         "type": "document",
-                        "title": "Resetting Your Password",
+                        "title": "Assets",
                         "url": "/terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
-                        "title": "Setting A Phone Number",
+                        "title": "Exchanges",
                         "url": "/terminal/setting-a-phone-number"
                     },
                     {
                         "type": "document",
-                        "title": "Updating Via",
+                        "title": "Markets",
                         "url": "/terminal/updating-via"
                     },
                     {
                         "type": "document",
-                        "title": "Changelog",
+                        "title": "Candles",
+                        "url": "/terminal/changelog"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Trades",
+                        "url": "/terminal/changelog"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Orderbooks",
+                        "url": "/terminal/changelog"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Quotes",
+                        "url": "/terminal/changelog"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Alerts",
                         "url": "/terminal/changelog"
                     }
                 ]

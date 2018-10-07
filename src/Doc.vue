@@ -1,7 +1,5 @@
 <template>
-    <div id="doc">
-        <vue-markdown class="markdown" :source="source" v-on:rendered="rendered"></vue-markdown>
-    </div>
+    <div class="markdown" v-html="source"></div>
 </template>
 
 <script>
@@ -9,25 +7,38 @@ export default {
     name: 'Doc',
     data: function(){
         return {
-            source: ''
+            source: '',
+            markdown: null
         };
     },
     methods: {
         load: function(){
             this.$http.get(this.$route.params.document ? `/docs/${this.$route.params.document}.md` : `/docs/intro.md`)
             .then(response => response.body)
-            .then(source => this.source = source);
-        },
-        rendered: function(res){
-            console.log(res)
+            .then(source => this.source = this.markdown.render(source));
         }
     },
     watch: {
-        '$route.params.document': function(from, to){
+        '$route.params.document': function(){
             this.load();
         }
     },
     created: function(){
+        this.markdown = markdownit({
+            html: true,
+            highlight: function(str, lang){
+                if(lang && hljs.getLanguage(lang)){
+                    try {
+                        return hljs.highlight(lang, str).value;
+                    }catch(error){
+                        console.error(error);
+                    }
+                }
+
+                return '';
+            }
+        });
+
         this.load();
     }
 }
@@ -37,20 +48,17 @@ export default {
     @import "./less/variables";
     @import "./less/mixins";
 
-    #doc
+    .markdown
     {
         padding: 45px 50px;
         max-width: 800px;
-    }
 
-    .markdown
-    {
         h1
         {
             font-size: 36px;
             line-height: 46px;
             font-weight: 500;
-            color: @f;
+            color: @header-text-color;
             margin-top: 50px;
 
             &:first-child
@@ -66,7 +74,7 @@ export default {
             line-height: 28px;
             font-weight: 500;
             margin: 50px 0 10px;
-            color: @f;
+            color: @header-text-color;
         }
 
         h1 + h2
@@ -74,7 +82,7 @@ export default {
             font-size: 18px;
             line-height: 22px;
             font-weight: 500;
-            color: @grey;
+            color: @text-color;
             margin-top: 4px;
             margin-bottom: 30px;
         }
@@ -89,12 +97,12 @@ export default {
             font-size: 20px;
             line-height: 22px;
             font-weight: 700;
-            color: @f;
+            color: @header-text-color;
         }
 
         p
         {
-            color: @grey;
+            color: @text-color;
             font-family: Roboto;
             font-weight: 400;
             font-size: 16px;
@@ -104,7 +112,7 @@ export default {
 
         a
         {
-            color: @base;
+            color: @via;
             text-decoration: none;
 
             &:hover
@@ -125,12 +133,8 @@ export default {
             code
             {
                 display: block;
+                color: @text-color;
             }
-        }
-
-        .documentation-sections
-        {
-
         }
 
         .documentation-section
@@ -138,14 +142,14 @@ export default {
             display: block;
             padding: 12px 20px 12px 68px;
             margin-bottom: 15px;
-            border: 2px solid #555;
+            border: 2px solid @border-color;
             user-select: none;
             transition: border-color ease 0.25s;
             cursor: pointer;
 
             .documentation-section-title
             {
-                color: @f;
+                color: @header-text-color;
                 font-weight: 500;
                 line-height: 18px;
                 text-decoration: none;
@@ -153,7 +157,7 @@ export default {
 
             .documentation-section-description
             {
-                color: @grey;
+                color: @text-color;
                 margin-top: 4px;
                 line-height: 18px;
                 text-decoration: none;
@@ -163,7 +167,6 @@ export default {
             {
                 width: 24px;
                 height: 24px;
-                background: #DDD;
                 content: "";
                 position: absolute;
                 top: 20px;
