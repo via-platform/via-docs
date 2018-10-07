@@ -73,7 +73,7 @@ export default {
             font-size: 22px;
             line-height: 28px;
             font-weight: 500;
-            margin: 50px 0 10px;
+            margin: 50px 0 4px;
             color: @header-text-color;
         }
 
@@ -100,14 +100,50 @@ export default {
             color: @header-text-color;
         }
 
+        h2 + h3
+        {
+            font-size: 16px;
+            color: @text-color;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
         p
         {
             color: @text-color;
-            font-family: Roboto;
             font-weight: 400;
             font-size: 16px;
             line-height: 22px;
             margin: 20px 0;
+        }
+
+        ul, ol
+        {
+            color: @text-color;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            margin: 20px 0;
+
+            li
+            {
+                margin-left: 18px;
+            }
+        }
+
+        ul
+        {
+            list-style: disc;
+        }
+
+        ol
+        {
+
+        }
+
+        h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol
+        {
+            margin-top: 10px;
         }
 
         a
@@ -171,25 +207,25 @@ export default {
                 position: absolute;
                 top: 20px;
                 left: 22px;
-                opacity: 0.5;
+                // opacity: 0.5;
             }
 
             &.terminal::after
             {
-                background: url('./assets/terminal.svg') 0 2px no-repeat;
+                background: url('./assets/terminal-dark.svg') 0 2px no-repeat;
                 background-size: 24px auto;
             }
 
             &.packages::after
             {
-                background: url('./assets/package.svg') 0 0 no-repeat;
+                background: url('./assets/package-dark.svg') 0 0 no-repeat;
                 background-size: 24px auto;
             }
 
             &.data::after
             {
-                background: url('./assets/data-services.svg') 0 0 no-repeat;
-                background-size: 24px auto;
+                background: url('./assets/data-services-dark.svg') 1px 1px no-repeat;
+                background-size: 22px auto;
             }
 
             &:hover
