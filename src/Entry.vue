@@ -42,6 +42,10 @@ export default {
                 this.expanded = true;
             }
         }
+
+        if(this.item.sort){
+            this.item.contents = this.item.contents.slice().sort((a, b) => a.title < b.title ? -1 : 1);
+        }
     }
 }
 </script>

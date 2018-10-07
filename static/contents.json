@@ -229,88 +229,284 @@
             },
             {
                 "type": "category",
-                "title": "Essential Classes",
+                "title": "Core Classes",
+                "sort": true,
                 "contents": [
                     {
                         "type": "document",
-                        "title": "Via Object",
+                        "title": "Via Environment",
                         "url": "/terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
-                        "title": "User Interface",
-                        "url": "/terminal/resetting-your-password",
-                        "contents": [
-                            {
-                                "type": "document",
-                                "title": "Workspace",
-                                "url": "/terminal/resetting-your-password"
-                            },
-                            {
-                                "type": "document",
-                                "title": "Pane Containers",
-                                "url": "/terminal/resetting-your-password"
-                            },
-                            {
-                                "type": "document",
-                                "title": "Panes",
-                                "url": "/terminal/resetting-your-password"
-                            }
-                        ]
+                        "title": "Workspace",
+                        "url": "/terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
-                        "title": "Market Data",
-                        "url": "/terminal/resetting-your-password",
-                        "contents": [
-                            {
-                                "type": "document",
-                                "title": "Assets",
-                                "url": "/terminal/resetting-your-password"
-                            },
-                            {
-                                "type": "document",
-                                "title": "Exchanges",
-                                "url": "/terminal/resetting-your-password"
-                            },
-                            {
-                                "type": "document",
-                                "title": "Markets",
-                                "url": "/terminal/resetting-your-password"
-                            }
-                        ]
+                        "title": "Workspace Center",
+                        "url": "/terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
-                        "title": "User Data",
+                        "title": "Workspace Group",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Emitter",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Disposable",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Composite Disposable",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Command Registry",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Config",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Notification Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Notification",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Tooltip Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "View Registry",
+                        "url": "/terminal/resetting-your-password"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Extended Classes",
+                "sort": true,
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Pane Container",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Pane",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Panel",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Console",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Clipboard",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Context Menu Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Deserializer Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "History Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Keymap Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Menu Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Package Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Package",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Scope Descriptor",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Style Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Theme Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "User",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Data Stream",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Websocket Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Websocket",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "URI Handler Registry",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Modal",
+                        "url": "/terminal/resetting-your-password"
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Market Data",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Asset Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Asset",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Exchange Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Exchange",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Market Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Market",
                         "url": "/terminal/resetting-your-password",
                         "contents": [
                             {
                                 "type": "document",
-                                "title": "Accounts",
+                                "title": "Ticker",
                                 "url": "/terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
-                                "title": "Positions",
+                                "title": "Orderbook",
                                 "url": "/terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
-                                "title": "Orders",
+                                "title": "Trades",
                                 "url": "/terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
-                                "title": "Fills",
+                                "title": "Candles",
                                 "url": "/terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
-                                "title": "Alerts",
+                                "title": "Quotes",
                                 "url": "/terminal/resetting-your-password"
                             }
                         ]
+                    }
+                ]
+            },
+            {
+                "type": "category",
+                "title": "Trade Execution",
+                "contents": [
+                    {
+                        "type": "document",
+                        "title": "Account Manager",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Account",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Positions",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Orders",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Fills",
+                        "url": "/terminal/resetting-your-password"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Alerts",
+                        "url": "/terminal/resetting-your-password"
                     }
                 ]
             }
