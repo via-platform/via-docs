@@ -24,7 +24,7 @@
 
 ## Which section is right for me?
 
-```javascript
+``` js
 function hello(){
     world;
 }

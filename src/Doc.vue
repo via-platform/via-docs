@@ -1,6 +1,6 @@
 <template>
     <div id="doc">
-        <vue-markdown class="markdown" :source="source" :postrender="highlight"></vue-markdown>
+        <vue-markdown class="markdown" :source="source" v-on:rendered="rendered"></vue-markdown>
     </div>
 </template>
 
@@ -18,8 +18,8 @@ export default {
             .then(response => response.body)
             .then(source => this.source = source);
         },
-        highlight: function(string){
-            return string;
+        rendered: function(res){
+            console.log(res)
         }
     },
     watch: {
