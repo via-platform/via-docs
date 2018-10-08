@@ -1,8 +1,8 @@
 # Change Log
 ## These are the most recent updates to the Via Terminal. You can find the latest release, as well as historical releases on our [releases page](https://releases.via.world).
 
-## 0.11.0-alpha
-### 05 Oct 2018
+## 0.11.1-alpha
+### 08 Oct 2018
 
 * Volume profiles are now enabled for all markets, in all timeframes.
 * A parallelogram drawing tool has been added to the chart component.
