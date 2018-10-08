@@ -94,9 +94,9 @@ export default {
 
         h3
         {
-            font-size: 20px;
-            line-height: 22px;
-            font-weight: 700;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 500;
             color: @header-text-color;
         }
 
@@ -113,8 +113,21 @@ export default {
             color: @text-color;
             font-weight: 400;
             font-size: 16px;
-            line-height: 22px;
+            line-height: 24px;
             margin: 20px 0;
+
+            code
+            {
+                display: inline-block;
+                border: 1px solid #DDD;
+                background: #FFF;
+                padding: 0 6px;
+                font-family: Inconsolata;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 20px;
+                border-radius: 3px;
+            }
         }
 
         ul, ol
@@ -122,7 +135,7 @@ export default {
             color: @text-color;
             font-weight: 400;
             font-size: 16px;
-            line-height: 22px;
+            line-height: 24px;
             margin: 20px 0;
 
             li
@@ -138,7 +151,7 @@ export default {
 
         ol
         {
-
+            list-style: decimal;
         }
 
         h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol
@@ -162,15 +175,27 @@ export default {
             font-family: Inconsolata;
             font-weight: 700;
             display: block;
-            border: 2px solid #555;
+            border: 1px solid #DDD;
             padding: 20px;
             line-height: 18px;
+            background: #FFF;
+            border-radius: 3px;
 
             code
             {
                 display: block;
                 color: @text-color;
             }
+        }
+
+        em
+        {
+            font-style: italic;
+        }
+
+        strong
+        {
+            font-weight: 700;
         }
 
         .documentation-section

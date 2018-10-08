@@ -183,11 +183,6 @@
                     },
                     {
                         "type": "document",
-                        "title": "Updating Via",
-                        "url": "/terminal/updating-via"
-                    },
-                    {
-                        "type": "document",
                         "title": "Changelog",
                         "url": "/terminal/changelog"
                     }
