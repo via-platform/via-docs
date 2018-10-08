@@ -4,7 +4,7 @@ Via is a desktop application designed for Windows and Mac OSX. To get started wi
 
 **Do not download and install Via from any source other than `https://releases.via.world`**.
 
-## Installing the Applications
+## Installing the Application
 
 Installation varies slightly depending on your operating system.
 
