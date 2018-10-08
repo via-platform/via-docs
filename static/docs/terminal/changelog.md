@@ -4,6 +4,18 @@
 ## 0.11.0-alpha
 ### 05 Oct 2018
 
+* Volume profiles are now enabled for all markets, in all timeframes.
+* A parallelogram drawing tool has been added to the chart component.
+* A triangle drawing tool has been added to the chart component.
+* Added a shadow value line to the chart for future use.
+* Right click watchlist items to open chart, etc.
+* You can now press the "L" hotkey to re-lock a chart.
+* Chart volume indicator will now show buy and sell volume individually.
+* Chart number of trades indicator will now show buy and sell volume individually.
+
+## 0.11.0-alpha
+### 05 Oct 2018
+
 * A new data backend was created for speed and efficiency improvements, and to lay the groundwork for future features.
 * There were a whole bunch of front end changes necessary for Via to properly interface with the new backend.
 * General UI / theme improvements.
