@@ -108,6 +108,11 @@ export default {
             font-weight: 500;
         }
 
+        h2 + table
+        {
+            margin-top: 18px;
+        }
+
         p
         {
             color: @text-color;
@@ -115,19 +120,19 @@ export default {
             font-size: 16px;
             line-height: 24px;
             margin: 20px 0;
+        }
 
-            code
-            {
-                display: inline-block;
-                border: 1px solid #DDD;
-                background: #FFF;
-                padding: 0 6px;
-                font-family: Inconsolata;
-                font-size: 15px;
-                font-weight: 700;
-                line-height: 20px;
-                border-radius: 3px;
-            }
+        p code, table code
+        {
+            display: inline-block;
+            border: 1px solid #DDD;
+            background: #FFF;
+            padding: 0 6px;
+            font-family: Inconsolata;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+            border-radius: 3px;
         }
 
         ul, ol
@@ -161,13 +166,19 @@ export default {
 
         a
         {
-            color: @via;
+            color: darken(@via, 10%);
             text-decoration: none;
 
             &:hover
             {
                 text-decoration: underline;
             }
+        }
+
+        img
+        {
+            max-width: 100%;
+            display: block;
         }
 
         pre
@@ -180,12 +191,18 @@ export default {
             line-height: 18px;
             background: #FFF;
             border-radius: 3px;
+            margin-bottom: 30px;
 
             code
             {
                 display: block;
                 color: @text-color;
             }
+        }
+
+        h3 + pre, h3 + table
+        {
+            margin-top: 5px;
         }
 
         em
@@ -196,6 +213,47 @@ export default {
         strong
         {
             font-weight: 700;
+        }
+
+        table
+        {
+            border: 1px solid #CCC;
+            width: 100%;
+            margin-bottom: 30px;
+
+            tbody tr
+            {
+                border-bottom: 1px solid #CCC;
+
+                &:last-child
+                {
+                    border-bottom: 0;
+                }
+            }
+
+            thead tr
+            {
+                border-bottom: 1px solid #CCC;
+                background: #E4E4E4;
+            }
+
+            td, th
+            {
+                border-right: 1px solid #CCC;
+                padding: 10px;
+
+                &:last-child
+                {
+                    border-right: 0;
+                }
+            }
+
+            th
+            {
+                text-align: left;
+                font-weight: 500;
+                color: #000;
+            }
         }
 
         .documentation-section

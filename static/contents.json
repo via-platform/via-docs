@@ -37,11 +37,6 @@
                     },
                     {
                         "type": "document",
-                        "title": "Windows and Panes",
-                        "url": "/terminal/windows-and-panes"
-                    },
-                    {
-                        "type": "document",
                         "title": "The Omnibar",
                         "url": "/terminal/omnibar"
                     },
@@ -115,8 +110,13 @@
                     },
                     {
                         "type": "document",
-                        "title": "Managing Alerts",
-                        "url": "/terminal/managing-alerts"
+                        "title": "Alert Manager",
+                        "url": "/terminal/alert-manager"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Console",
+                        "url": "/terminal/console"
                     }
                 ]
             },
@@ -180,6 +180,11 @@
                         "type": "document",
                         "title": "Setting A Phone Number",
                         "url": "/terminal/setting-a-phone-number"
+                    },
+                    {
+                        "type": "document",
+                        "title": "Issues & Suggestions",
+                        "url": "/terminal/issues-and-suggestions"
                     },
                     {
                         "type": "document",
@@ -516,17 +521,17 @@
             {
                 "type": "document",
                 "title": "Getting Started",
-                "url": "/terminal/resetting-your-password"
+                "url": "/data-services/getting-started"
             },
             {
                 "type": "document",
                 "title": "Authentication",
-                "url": "/terminal/resetting-your-password"
+                "url": "/data-services/resetting-your-password"
             },
             {
                 "type": "document",
                 "title": "Change Log",
-                "url": "/terminal/resetting-your-password"
+                "url": "/data-services/resetting-your-password"
             },
             {
                 "type": "category",
@@ -535,42 +540,42 @@
                     {
                         "type": "document",
                         "title": "Assets",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "/data-services/assets"
                     },
                     {
                         "type": "document",
                         "title": "Exchanges",
-                        "url": "/terminal/setting-a-phone-number"
+                        "url": "/data-services/exchanges"
                     },
                     {
                         "type": "document",
                         "title": "Markets",
-                        "url": "/terminal/updating-via"
+                        "url": "/data-services/markets"
                     },
                     {
                         "type": "document",
                         "title": "Candles",
-                        "url": "/terminal/changelog"
+                        "url": "/data-services/candles"
                     },
                     {
                         "type": "document",
                         "title": "Trades",
-                        "url": "/terminal/changelog"
+                        "url": "/data-services/trades"
                     },
                     {
                         "type": "document",
                         "title": "Orderbooks",
-                        "url": "/terminal/changelog"
+                        "url": "/data-services/orderbooks"
                     },
                     {
                         "type": "document",
                         "title": "Quotes",
-                        "url": "/terminal/changelog"
+                        "url": "/data-services/quotes"
                     },
                     {
                         "type": "document",
                         "title": "Alerts",
-                        "url": "/terminal/changelog"
+                        "url": "/data-services/alerts"
                     }
                 ]
             },
@@ -581,59 +586,59 @@
                     {
                         "type": "document",
                         "title": "Connecting",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "/data-services/websockets"
                     },
                     {
                         "type": "document",
                         "title": "Heartbeats",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "/data-services/heartbeats"
                     },
                     {
                         "type": "document",
                         "title": "Data Streams",
-                        "url": "/terminal/resetting-your-password",
+                        "url": "/data-services/data-streams",
                         "contents": [
                             {
                                 "type": "document",
                                 "title": "Ticker",
-                                "url": "/terminal/setting-a-phone-number"
+                                "url": "/data-services/ticker-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Trades",
-                                "url": "/terminal/updating-via"
+                                "url": "/data-services/trades-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Quote",
-                                "url": "/terminal/changelog"
+                                "url": "/data-services/quote-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Orderbook",
-                                "url": "/terminal/changelog"
+                                "url": "/data-services/orderbook-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Candles",
-                                "url": "/terminal/changelog"
+                                "url": "/data-services/candles-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Summary",
-                                "url": "/terminal/changelog"
+                                "url": "/data-services/summary-stream"
                             }
                         ]
                     },
                     {
                         "type": "document",
-                        "title": "Connection Status",
-                        "url": "/terminal/resetting-your-password"
+                        "title": "Exchange Connection Status",
+                        "url": "/data-services/exchange-connection-status"
                     },
                     {
                         "type": "document",
                         "title": "Real Time Alerts",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "/data-services/real-time-alerts"
                     }
                 ]
             }
