@@ -1,6 +1,15 @@
 # Change Log
 ## These are the most recent updates to the Via Terminal. You can find the latest release, as well as historical releases on our [releases page](https://releases.via.world).
 
+## 0.11.2-alpha
+### 08 Oct 2018
+
+* Fixed a couple bugs with charting.
+* The omnibar will now only show tradeable markets when searching.
+* The omnibar will now refocus the active pane after you are done with it.
+* The omnibar will now show search results relevant to the currently focused tab.
+* Fixed a bug that was preventing the accounts window from opening properly.
+
 ## 0.11.1-alpha
 ### 08 Oct 2018
 
