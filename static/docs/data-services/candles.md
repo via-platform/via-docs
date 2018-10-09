@@ -23,31 +23,44 @@ There are many different candle granularities available for your consumption. No
 | 7 Day | 604800000 |
 | 10 Day | 864000000 |
 
-## Schema
+## Candle Schema
 
 | Field | Type | Description |
 |-------|------|-------------|
 | candle_period        | Number | The length of this candle in milliseconds. |
-| time_period_start    | Date |  |
-| time_period_end      | Date |  |
-| time_open            | Date |  |
-| time_close           | Date |  |
-| price_open           | Number |  |
-| price_high           | Number |  |
-| price_low            | Number |  |
-| price_close          | Number |  |
-| volume_traded        | Number |  |
-| volume_buy           | Number |  |
-| volume_sell          | Number |  |
-| volume_notional      | Number |  |
-| trades_count         | Number |  |
-| buy_count            | Number |  |
-| sell_count           | Number |  |
-| vwap                 | Number |  |
-| profile_increment    | Number |  |
+| time_period_start    | Date | The start time for this candle. |
+| time_period_end      | Date | The end time for this candle. |
+| time_open            | Date | The timestamp of the first trade. |
+| time_close           | Date | The timestamp of the last trade. |
+| price_open           | Number | The price at which the first trade was executed. |
+| price_high           | Number | The highest price at which a trade was executed. |
+| price_low            | Number | The lowest price at which a trade was executed. |
+| price_close          | Number | The price at which the last trade was executed. |
+| volume_traded        | Number | The total trading volume in the base currency. |
+| volume_buy           | Number | The total volume where the seller was the aggressor. |
+| volume_sell          | Number | The total volume where the seller was the aggressor. |
+| volume_notional      | Number | The total trading volume in the quote currency. |
+| trades_count         | Number | The total number of trades that took place. |
+| buy_count            | Number | The number of trades where the buyer was the aggressor. |
+| sell_count           | Number | The number of trades where the seller was the aggressor. |
+| vwap                 | Number | The volume weighted average price (`volume_notional` / `volume_traded`). |
+| profile_increment    | Number | The size of the increments (i.e. buckets) at which the volume profile is calculated. |
 | profile              | JSON | An array of arrays containing volume profile details. |
 | first_trade_sequence | Number | The first trade `sequence` in this candle. |
 | last_trade_sequence  | Number | The last trade `sequence` in this candle. |
+
+## Volume Profile Schema / Example
+
+Volume profiles consist of an parent array with between 1 and 100 child arrays. Each child array will have exactly 3 values: the `price_level`, `volume_buy`, and `volume_sell`, corresponding to the amount of buy / sell trades at a certain price level between `time_period_start` to `time_period_end`.
+
+``` javascript
+[
+    [ price_level, volume_buy, volume_sell ],
+    ...
+]
+```
+
+Each `price_level` will necessarily be an increment of `profile_increment`. There will be no greater than 100 price levels per candle. This is by design, rather than a result of some technical limitation. In particular, there are some exchanges that allow for tick sizes far beyond any reasonable limit (e.g. a BTC-USD market quoted out to 8 decimal places), and it would be unproductive to store volume profile information at such levels of granularity.
 
 ## GET /api/v1/:market_id/candles
 
@@ -57,7 +70,10 @@ Returns a list of all available markets. You can optionally pass a filter query 
 
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| filter    | string | false | Only exchanges whose market_id starts with this string will be returned. |
+| market_id    | String | true | The market ID for the desired market. |
+| candle_period    | Number | true | The granularity in milliseconds. |
+| time_start    | Date | true | An ISO-8601 date string. |
+| time_end    | Date | true | An ISO-8601 date string. |
 
 ### Sample Request
 
@@ -65,9 +81,14 @@ Returns a list of all available markets. You can optionally pass a filter query 
 const axios = require('axios');
 const token = 'eyJhbGciOiJSUz[...]';
 
-axios.get('https://data.via.world/api/v1/markets', {
+axios.get('https://data.via.world/api/v1/:market_id/candles', {
     headers: {
         Authorization: `Bearer ${token}`
+    },
+    params: {
+        candle_period: 300000,
+        time_start: new Date(Date.now() - 3600000),
+        time_end: new Date()
     }
 });
 ```
@@ -76,39 +97,27 @@ axios.get('https://data.via.world/api/v1/markets', {
 ``` json
 [
     {
-        "market_id": "BINANCE_SPOT_ETH_USDT",
-        "market_type": "SPOT",
-        "exchange_id": "BINANCE",
-        "asset_id_base": "ETH",
-        "asset_id_quote": "USDT",
-        "future_delivery_time": null,
-        "option_type_is_call": null,
-        "option_strike_price": null,
-        "option_contract_unit": null,
-        "option_exercise_style": null,
-        "option_expiration_time": null,
-        "exchange_market_id": "ETHUSDT",
-        "exchange_asset_id_base": "ETH",
-        "exchange_asset_id_quote": "USDT",
-        "exchange_fee_taker": null,
-        "exchange_fee_maker": null,
-        "exchange_fee_currency": null,
-        "active": true,
-        "precision_price": 2,
-        "precision_amount": 5,
-        "precision_notional": 8,
-        "min_price": 20.93,
-        "min_amount": 0.00001,
-        "min_notional": 10,
-        "max_price": 2092.3,
-        "max_amount": 10000000,
-        "max_notional": null,
-        "reference_market_id": null,
-        "enabled": true,
-        "metadata": {},
-        "contract_size": null,
-        "tick_size": 0.01,
-        "profile_increment": 0.1
+        "candle_period": 300000,
+        "time_period_start": "2018-10-08T13:55:00.000Z",
+        "time_period_end": "2018-10-08T14:00:00.000Z",
+        "time_open": "2018-10-08T13:55:10.366Z",
+        "time_close": "2018-10-08T13:59:27.250Z",
+        "price_open": 6606.61,
+        "price_high": 6606.61,
+        "price_low": 6606.6,
+        "price_close": 6606.61,
+        "volume_traded": 0.31344217,
+        "volume_buy": 0.31344217,
+        "volume_sell": 0,
+        "volume_notional": 2070.78917474,
+        "trades_count": 8,
+        "buy_count": 8,
+        "sell_count": 0,
+        "vwap": 6606.60680962,
+        "profile_increment": 1,
+        "profile": [["6606", "0.31344217", "0"]],
+        "first_trade_sequence": 203551,
+        "last_trade_sequence": 203558
     },
     ...
 ]
