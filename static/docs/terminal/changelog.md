@@ -1,6 +1,21 @@
 # Change Log
 ## These are the most recent updates to the Via Terminal. You can find the latest release, as well as historical releases on our [releases page](https://releases.via.world).
 
+## 0.11.3-alpha
+### 09 Oct 2018
+
+* You can now save and restore workspaces. Workspace Manager has been added as a core package.
+* Added preference for formatting numbers with commas or periods.
+* Added preference for formatting timestamps with 12 or 24 hour clock.
+* The orderbook panel will now show properly formatted numbers and prices.
+* The trade history panel will now show properly formatted numbers, prices, and timestamps.
+* The current value line on the chart will now show properly formatted numbers.
+* Fixed a bug that caused the omnibar to remain in the red error state after canceling a search.
+* Fixed a bug that prevented you from being able to directly change the Trade & Trade History market.
+* Fixed a UI bug where the white border was cut off on a focused text field in the Trade component.
+* The `Accounts` component has been renamed to `Positions`.
+* Enabled 10 more markets on Bitfinex, including Tron, Bitcoin Cash, IOTA, NEO, Ripple, and Monero.
+
 ## 0.11.2-alpha
 ### 08 Oct 2018
 
