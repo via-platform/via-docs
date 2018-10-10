@@ -15,7 +15,8 @@ export default {
         load: function(){
             this.$http.get(this.$route.params.document ? `/docs/${this.$route.params.document}.md` : `/docs/intro.md`)
             .then(response => response.body)
-            .then(source => this.source = this.markdown.render(source));
+            .then(source => this.source = this.markdown.render(source))
+            .then(() => window.scrollTo(0, 0));
         }
     },
     watch: {

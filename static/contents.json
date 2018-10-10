@@ -12,17 +12,17 @@
                     {
                         "type": "document",
                         "title": "Installing Via",
-                        "url": "/terminal/installing-via"
+                        "url": "terminal/installing-via"
                     },
                     {
                         "type": "document",
                         "title": "Creating An Account",
-                        "url": "/terminal/creating-an-account"
+                        "url": "terminal/creating-an-account"
                     },
                     {
                         "type": "document",
                         "title": "Two Factor Authentication",
-                        "url": "/terminal/two-factor-authentication"
+                        "url": "terminal/two-factor-authentication"
                     }
                 ]
             },
@@ -33,27 +33,27 @@
                     {
                         "type": "document",
                         "title": "Customizing Your Interface",
-                        "url": "/terminal/customizing-your-interface"
+                        "url": "terminal/customizing-your-interface"
                     },
                     {
                         "type": "document",
                         "title": "The Omnibar",
-                        "url": "/terminal/omnibar"
+                        "url": "terminal/omnibar"
                     },
                     {
                         "type": "document",
                         "title": "The Status Bar",
-                        "url": "/terminal/status-bar"
+                        "url": "terminal/status-bar"
                     },
                     {
                         "type": "document",
                         "title": "Keymaps",
-                        "url": "/terminal/keymaps"
+                        "url": "terminal/keymaps"
                     },
                     {
                         "type": "document",
                         "title": "Linking Tabs",
-                        "url": "/terminal/linking-tabs"
+                        "url": "terminal/linking-tabs"
                     }
                 ]
             },
@@ -64,59 +64,59 @@
                     {
                         "type": "document",
                         "title": "Charts",
-                        "url": "/terminal/charts",
+                        "url": "terminal/charts",
                         "contents": [
                             {
                                 "type": "document",
                                 "title": "Chart Types",
-                                "url": "/terminal/chart-types"
+                                "url": "terminal/chart-types"
                             },
                             {
                                 "type": "document",
                                 "title": "Technical Indicators",
-                                "url": "/terminal/technical-indicators"
+                                "url": "terminal/technical-indicators"
                             },
                             {
                                 "type": "document",
                                 "title": "Chart Trading",
-                                "url": "/terminal/chart-trading"
+                                "url": "terminal/chart-trading"
                             }
                         ]
                     },
                     {
                         "type": "document",
                         "title": "Watchlist",
-                        "url": "/terminal/watchlist"
+                        "url": "terminal/watchlist"
                     },
                     {
                         "type": "document",
                         "title": "Symbol Explorer",
-                        "url": "/terminal/symbol-explorer"
+                        "url": "terminal/symbol-explorer"
                     },
                     {
                         "type": "document",
                         "title": "Time & Sales",
-                        "url": "/terminal/time-and-sales"
+                        "url": "terminal/time-and-sales"
                     },
                     {
                         "type": "document",
                         "title": "Orderbook",
-                        "url": "/terminal/orderbook"
+                        "url": "terminal/orderbook"
                     },
                     {
                         "type": "document",
                         "title": "Market Depth",
-                        "url": "/terminal/market-depth"
+                        "url": "terminal/market-depth"
                     },
                     {
                         "type": "document",
                         "title": "Alert Manager",
-                        "url": "/terminal/alert-manager"
+                        "url": "terminal/alert-manager"
                     },
                     {
                         "type": "document",
                         "title": "Console",
-                        "url": "/terminal/console"
+                        "url": "terminal/console"
                     }
                 ]
             },
@@ -127,22 +127,22 @@
                     {
                         "type": "document",
                         "title": "Adding Exchange Accounts",
-                        "url": "/terminal/adding-exchange-accounts"
+                        "url": "terminal/adding-exchange-accounts"
                     },
                     {
                         "type": "document",
                         "title": "Executing Trades",
-                        "url": "/terminal/executing-trades"
+                        "url": "terminal/executing-trades"
                     },
                     {
                         "type": "document",
                         "title": "Orders and Fills",
-                        "url": "/terminal/orders-and-fills"
+                        "url": "terminal/orders-and-fills"
                     },
                     {
                         "type": "document",
                         "title": "Account Positions",
-                        "url": "/terminal/account-positions"
+                        "url": "terminal/account-positions"
                     }
                 ]
             },
@@ -153,17 +153,17 @@
                     {
                         "type": "document",
                         "title": "Managing Packages",
-                        "url": "/terminal/managing-packages"
+                        "url": "terminal/managing-packages"
                     },
                     {
                         "type": "document",
                         "title": "Package Settings",
-                        "url": "/terminal/package-settings"
+                        "url": "terminal/package-settings"
                     },
                     {
                         "type": "document",
                         "title": "Creating Packages",
-                        "url": "/terminal/creating-packages"
+                        "url": "terminal/creating-packages"
                     }
                 ]
             },
@@ -174,22 +174,22 @@
                     {
                         "type": "document",
                         "title": "Resetting Your Password",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Setting A Phone Number",
-                        "url": "/terminal/setting-a-phone-number"
+                        "url": "terminal/setting-a-phone-number"
                     },
                     {
                         "type": "document",
                         "title": "Issues & Suggestions",
-                        "url": "/terminal/issues-and-suggestions"
+                        "url": "terminal/issues-and-suggestions"
                     },
                     {
                         "type": "document",
                         "title": "Changelog",
-                        "url": "/terminal/changelog"
+                        "url": "terminal/changelog"
                     }
                 ]
             }
@@ -208,22 +208,22 @@
                     {
                         "type": "document",
                         "title": "Platform Architecture",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Creating Packages",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Linking Packages",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Publishing Packages",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     }
                 ]
             },
@@ -235,67 +235,67 @@
                     {
                         "type": "document",
                         "title": "Via Environment",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Workspace",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Workspace Center",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Workspace Group",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Emitter",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Disposable",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Composite Disposable",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Command Registry",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Config",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Notification Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Notification",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Tooltip Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "View Registry",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     }
                 ]
             },
@@ -307,107 +307,107 @@
                     {
                         "type": "document",
                         "title": "Pane Container",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Pane",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Panel",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Console",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Clipboard",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Context Menu Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Deserializer Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "History Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Keymap Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Menu Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Package Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Package",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Scope Descriptor",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Style Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Theme Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "User",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Data Stream",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Websocket Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Websocket",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "URI Handler Registry",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Modal",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     }
                 ]
             },
@@ -418,57 +418,57 @@
                     {
                         "type": "document",
                         "title": "Asset Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Asset",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Exchange Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Exchange",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Market Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Market",
-                        "url": "/terminal/resetting-your-password",
+                        "url": "terminal/resetting-your-password",
                         "contents": [
                             {
                                 "type": "document",
                                 "title": "Ticker",
-                                "url": "/terminal/resetting-your-password"
+                                "url": "terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
                                 "title": "Orderbook",
-                                "url": "/terminal/resetting-your-password"
+                                "url": "terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
                                 "title": "Trades",
-                                "url": "/terminal/resetting-your-password"
+                                "url": "terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
                                 "title": "Candles",
-                                "url": "/terminal/resetting-your-password"
+                                "url": "terminal/resetting-your-password"
                             },
                             {
                                 "type": "document",
                                 "title": "Quotes",
-                                "url": "/terminal/resetting-your-password"
+                                "url": "terminal/resetting-your-password"
                             }
                         ]
                     }
@@ -481,32 +481,32 @@
                     {
                         "type": "document",
                         "title": "Account Manager",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Account",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Positions",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Orders",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Fills",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     },
                     {
                         "type": "document",
                         "title": "Alerts",
-                        "url": "/terminal/resetting-your-password"
+                        "url": "terminal/resetting-your-password"
                     }
                 ]
             }
@@ -521,17 +521,17 @@
             {
                 "type": "document",
                 "title": "Getting Started",
-                "url": "/data-services/getting-started"
+                "url": "data-services/getting-started"
             },
             {
                 "type": "document",
                 "title": "Authentication",
-                "url": "/data-services/resetting-your-password"
+                "url": "data-services/resetting-your-password"
             },
             {
                 "type": "document",
                 "title": "Change Log",
-                "url": "/data-services/resetting-your-password"
+                "url": "data-services/resetting-your-password"
             },
             {
                 "type": "category",
@@ -540,42 +540,42 @@
                     {
                         "type": "document",
                         "title": "Assets",
-                        "url": "/data-services/assets"
+                        "url": "data-services/assets"
                     },
                     {
                         "type": "document",
                         "title": "Exchanges",
-                        "url": "/data-services/exchanges"
+                        "url": "data-services/exchanges"
                     },
                     {
                         "type": "document",
                         "title": "Markets",
-                        "url": "/data-services/markets"
+                        "url": "data-services/markets"
                     },
                     {
                         "type": "document",
                         "title": "Candles",
-                        "url": "/data-services/candles"
+                        "url": "data-services/candles"
                     },
                     {
                         "type": "document",
                         "title": "Trades",
-                        "url": "/data-services/trades"
+                        "url": "data-services/trades"
                     },
                     {
                         "type": "document",
                         "title": "Orderbooks",
-                        "url": "/data-services/orderbooks"
+                        "url": "data-services/orderbooks"
                     },
                     {
                         "type": "document",
                         "title": "Quotes",
-                        "url": "/data-services/quotes"
+                        "url": "data-services/quotes"
                     },
                     {
                         "type": "document",
                         "title": "Alerts",
-                        "url": "/data-services/alerts"
+                        "url": "data-services/alerts"
                     }
                 ]
             },
@@ -586,59 +586,59 @@
                     {
                         "type": "document",
                         "title": "Connecting",
-                        "url": "/data-services/websockets"
+                        "url": "data-services/websockets"
                     },
                     {
                         "type": "document",
                         "title": "Heartbeats",
-                        "url": "/data-services/heartbeats"
+                        "url": "data-services/heartbeats"
                     },
                     {
                         "type": "document",
                         "title": "Data Streams",
-                        "url": "/data-services/data-streams",
+                        "url": "data-services/data-streams",
                         "contents": [
                             {
                                 "type": "document",
                                 "title": "Ticker",
-                                "url": "/data-services/ticker-stream"
+                                "url": "data-services/ticker-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Trades",
-                                "url": "/data-services/trades-stream"
+                                "url": "data-services/trades-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Quote",
-                                "url": "/data-services/quote-stream"
+                                "url": "data-services/quote-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Orderbook",
-                                "url": "/data-services/orderbook-stream"
+                                "url": "data-services/orderbook-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Candles",
-                                "url": "/data-services/candles-stream"
+                                "url": "data-services/candles-stream"
                             },
                             {
                                 "type": "document",
                                 "title": "Summary",
-                                "url": "/data-services/summary-stream"
+                                "url": "data-services/summary-stream"
                             }
                         ]
                     },
                     {
                         "type": "document",
                         "title": "Exchange Connection Status",
-                        "url": "/data-services/exchange-connection-status"
+                        "url": "data-services/exchange-connection-status"
                     },
                     {
                         "type": "document",
                         "title": "Real Time Alerts",
-                        "url": "/data-services/real-time-alerts"
+                        "url": "data-services/real-time-alerts"
                     }
                 ]
             }

@@ -1,6 +1,6 @@
 <template>
     <li :class="[item.class ? item.class : '', item.expandable ? 'expandable' : '', expanded ? 'expanded' : 'collapsed']">
-        <router-link :to="item.url" v-if="item.type === 'document'">{{item.title}}</router-link>
+        <router-link :to="'/' + item.url" v-if="item.type === 'document'">{{item.title}}</router-link>
         <a class="expandable" v-if="item.type === 'category' && item.expandable" v-on:click="expand">{{item.title}}</a>
         <div v-if="item.type === 'category' && !item.expandable">{{item.title}}</div>
         <list v-if="item.contents" :items="item.contents"></list>
@@ -38,7 +38,7 @@ export default {
         if(this.item.expandable){
             const path = this.$route.params.document;
 
-            if(this.contains(path)){
+            if(this.contains(this.item.contents, path)){
                 this.expanded = true;
             }
         }
